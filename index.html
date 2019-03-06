@@ -64,14 +64,14 @@
           if (hi_open > 10 && hi_lo > 10){
             var filtered_row = {};
             filtered_row.SYMBOL = row.SYMBOL;
-            filtered_row.OPEN_PRICE = row.OPEN_PRICE;
-            filtered_row.HIGH_PRICE = row.HIGH_PRICE;
-            filtered_row.LOW_PRICE = row.LOW_PRICE;
+            filtered_row.OP = row.OPEN_PRICE;
+            filtered_row.HI = row.HIGH_PRICE;
+            filtered_row.LO = row.LOW_PRICE;
             // filtered_row.CLOSE_PRICE = row.CLOSE_PRICE;
-            filtered_row.TTL_TRD_QNTY = row.TTL_TRD_QNTY;
-            filtered_row.NO_OF_TRADES = row.NO_OF_TRADES;
-            filtered_row.HIGH_OPEN = Math.round(hi_open);
-            filtered_row.HIGH_LOW = Math.round(hi_lo);
+            filtered_row.QNTY = row.TTL_TRD_QNTY;
+            filtered_row.TRDS = row.NO_OF_TRADES;
+            filtered_row.HI_OP = Math.round(hi_open);
+            filtered_row.HI_LO = Math.round(hi_lo);
             return filtered_row;
           } else {
             return null;
@@ -83,13 +83,13 @@
           if (hi_lo > gtby){
             var filtered_row = {};
             filtered_row.SYMBOL = row.SYMBOL;
-            filtered_row.OPEN = row.OPEN_PRICE;
-            filtered_row.HIGH = row.HIGH_PRICE;
-            filtered_row.LOW = row.LOW_PRICE;
+            filtered_row.OP = row.OPEN_PRICE;
+            filtered_row.HI = row.HIGH_PRICE;
+            filtered_row.LO = row.LOW_PRICE;
             // filtered_row.CLOSE_PRICE = row.CLOSE_PRICE;
             filtered_row.QNTY = row.TTL_TRD_QNTY;
             filtered_row.TRDS = row.NO_OF_TRADES;
-            filtered_row.HI_OPEN = Math.round(hi_open);
+            filtered_row.HI_OP = Math.round(hi_open);
             filtered_row.HI_LO = Math.round(hi_lo);
             return filtered_row;
           } else {
