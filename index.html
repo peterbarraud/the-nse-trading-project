@@ -59,7 +59,7 @@
           return row;
         }
         higtopengtlo = function(row){
-          var hi_open = ((row.HIGH_PRICE - row.CLOSE_PRICE)/row.CLOSE_PRICE)*100;
+          var hi_open = ((row.HIGH_PRICE - row.OPEN_PRICE)/row.OPEN_PRICE)*100;
           var hi_lo = ((row.HIGH_PRICE - row.LOW_PRICE)/row.LOW_PRICE)*100;
           if (hi_open > 10 && hi_lo > 10){
             var filtered_row = {};
@@ -78,7 +78,7 @@
           }
         }
         higtloby = function(row){
-          var hi_open = ((row.HIGH_PRICE - row.CLOSE_PRICE)/row.CLOSE_PRICE)*100;
+          var hi_open = ((row.HIGH_PRICE - row.OPEN_PRICE)/row.OPEN_PRICE)*100;
           var hi_lo = ((row.HIGH_PRICE - row.LOW_PRICE)/row.LOW_PRICE)*100;
           if (hi_lo > gtby){
             var filtered_row = {};
